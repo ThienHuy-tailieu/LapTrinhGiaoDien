@@ -262,5 +262,23 @@ public class JNotepad extends JFrame {
         btOpen.setIcon(new ImageIcon(this.getClass().getResource("/images/open.png")));
         btSave.setIcon(new ImageIcon(this.getClass().getResource("/images/save.png")));
         add(toolBar, BorderLayout.NORTH);
+        btOpen.addActionListener(new ActionListener(){
+            @Override
+            public void actionPerformed(ActionEvent e){
+                openFile();
+            }
+        });
+        btSave.addActionListener(new ActionListener(){
+            @Override
+            public void actionPerformed(ActionEvent e){
+                saveFile();
+            }
+        });
+        btNew.addActionListener(new ActionListener(){
+            @Override
+            public void actionPerformed(ActionEvent e){
+                txtEditor.setText("");
+            }
+        });
     }
 }
