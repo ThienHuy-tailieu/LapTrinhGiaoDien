@@ -4,7 +4,6 @@
  */
 package gui;
 
-import bt01.SimpleCalculator;
 import java.awt.GridLayout;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
